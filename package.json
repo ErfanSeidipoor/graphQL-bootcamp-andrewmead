@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-": "babel-node src/index3.js",
-    "start": "nodemon src/index3.js --exec babel-node",
+    "start-": "babel-node src/index4.js",
+    "start": "nodemon -e js,graphql  src/index4.js --exec babel-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,8 +13,10 @@
   "license": "ISC",
   "dependencies": {
     "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "graphql-yoga": "^1.18.3",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "uuid": "^8.3.0"
   }
 }
